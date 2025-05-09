@@ -2,117 +2,106 @@
 <html lang="en">
 
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayuri Beauty Parlour</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayuri Beauty Parlour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      
-        <div class="hero-content">
-            <img src="logo.png" alt="Mayuri Beauty Parlour Logo" class="logo">
-            <h1>Welcome to Mayuri Beauty Parlour</h1>
-            <p>Your one-stop destination for beauty and wellness.</p>
-            <a href="#services" class="btn">Explore Services</a>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="logo.png" alt="Mayuri Beauty Parlour Logo" class="logo">
+      <h1>Welcome to Mayuri Beauty Parlour</h1>
+      <p>Your one-stop destination for beauty and wellness.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-card">
-                <img src="1.jpg" alt="Bridal Makeup">
-                <h3>Bridal Makeup</h3>
-                <p>Make your wedding day unforgettable with our bridal makeup services.</p>
-            </div>
-            <div class="service-card">
-                <img src="2.jpg" alt="Facial Treatment">
-                <h3>Facial Treatment</h3>
-                <p>Rejuvenate your skin with our special facial treatments.</p>
-            </div>
-            <div class="service-card">
-                <img src="3.jpg" alt="Hair Styling">
-                <h3>Hair Styling</h3>
-                <p>Get the perfect hairstyle to match your look and personality.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <img src="1.jpg" alt="Bridal Makeup">
+        <h3>Bridal Makeup</h3>
+        <p>Make your wedding day unforgettable with our bridal makeup services.</p>
+      </div>
+      <div class="service-card">
+        <img src="2.jpg" alt="Facial Treatment">
+        <h3>Facial Treatment</h3>
+        <p>Rejuvenate your skin with our special facial treatments.</p>
+      </div>
+      <div class="service-card">
+        <img src="3.jpg" alt="Hair Styling">
+        <h3>Hair Styling</h3>
+        <p>Get the perfect hairstyle to match your look and personality.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <img src="gallery1.jpg" alt="Gallery Image 1">
-            <img src="gallery2.jpg" alt="Gallery Image 2">
-            <img src="gallery3.jpg" alt="Gallery Image 3">
-        </div>
-    </section>
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="gallery1.jpg" alt="Gallery Image 1">
+      <img src="gallery2.jpg" alt="Gallery Image 2">
+      <img src="gallery3.jpg" alt="Gallery Image 3">
+    </div>
+  </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Mayuri Beauty Parlour, we believe in making beauty an experience. We offer a variety of beauty and wellness services, including bridal makeup,
-           facials, and hair styling, all tailored to your needs.We are working since 2016 and has done makeup training from delhi.Our coustomers are very happy and
-            satisfied by our service. We also provide training classes. </p>
-    </section>
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Mayuri Beauty Parlour, we believe in making beauty an experience. We offer a variety of beauty and wellness services, including bridal makeup,
+      facials, and hair styling, all tailored to your needs. We have been working since 2016 and received professional training in Delhi. Our customers are very happy and
+      satisfied with our services. We also provide training classes.</p>
+  </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="phone no." name="phone" placeholder="phone" optional>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number">
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-    <a href="https://wa.me/1234567890" class="book-btn-float">Book Now</a>
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/1234567890" class="book-btn-float">Book Now</a>
+  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+    <img src="WhatsApp.svg.png" alt="WhatsApp Icon">
+  </a>
 
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
-  <img src="WhatsApp.svg.png" alt="">
-</a>
-
-<section class="review-section" id="reviews">
+  <!-- Review Section -->
+  <section class="review-section" id="reviews">
     <h2>What Our Customers Say</h2>
-  
-    <!-- Best Review -->
     <div class="review-box">
       <div class="star-rating">★★★★★</div>
       <p>"I felt like a queen on my wedding day! The team at Mayuri Beauty Parlour is magical — my bridal look was flawless."</p>
       <p><strong>- Pooja S.</strong></p>
     </div>
-  
-    <!-- More Reviews (optional slider or carousel can be added later) -->
     <div class="review-box">
       <div class="star-rating">★★★★☆</div>
       <p>"Wonderful ambiance and very professional staff. Loved the facial and hair treatment!"</p>
       <p><strong>- Anjali R.</strong></p>
     </div>
-  
     <div class="review-box">
       <div class="star-rating">★★★★★</div>
       <p>"My go-to place for party makeup. Always on point and super friendly service!"</p>
@@ -120,36 +109,31 @@
     </div>
   </section>
 
+  <!-- Contact Location Section -->
   <section id="contact-location" style="padding: 60px 20px; background: #ffeaea;">
     <h2 style="text-align: center; font-family: 'Dancing Script', cursive; color: #d63384; font-size: 2.5rem; margin-bottom: 20px;">
       Find Us
     </h2>
-  
     <div style="text-align: center; margin-bottom: 20px;">
       <p><strong>Mayuri Beauty Parlour</strong></p>
-      <p>Rly st. road Anpara, sonbhadra, uttar pradesh 231225</p>
+      <p>Rly St. Road, Anpara, Sonbhadra, Uttar Pradesh 231225</p>
       <p><a href="tel:+911234567890">Call: +91 12345 67890</a></p>
     </div>
-  
     <div style="display: flex; justify-content: center;">
-      <iframe 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.8399907156286!2d82.76601027506173!3d24.21238297088436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398f253f58189e33%3A0xd453ff76b6065970!2sMayuri%20beauty%20parlour!5e0!3m2!1sen!2sin!4v1746790630005!5m2!1sen!2sin"
-           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.8399907156286!2d82.76601027506173!3d24.21238297088436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398f253f58189e33%3A0xd453ff76b6065970!2sMayuri%20beauty%20parlour!5e0!3m2!1sen!2sin!4v1746790630005!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
-  
-  
- <!-- Footer Section -->
- <footer>
-      <p>&copy; 2025 Mayuri Beauty Parlour. All rights reserved.</p>
 
-      <p>
-        <a href="https://wa.me/911234567890" target="_blank">WhatsApp</a> |
-        <a href="https://www.instagram.com/mayuri_beauty_palour_?igsh=NGwxZnZvenpzcGRw" target="_blank">Instagram</a>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Mayuri Beauty Parlour. All rights reserved.</p>
+    <p>
+      <a href="https://wa.me/911234567890" target="_blank">WhatsApp</a> |
+      <a href="https://www.instagram.com/mayuri_beauty_palour_?igsh=NGwxZnZvenpzcGRw" target="_blank">Instagram</a>
+    </p>
     <p>Contact us at <a href="mailto:info@mayuribeautyparlour.com">info@mayuribeautyparlour.com</a></p>
-
-      </p>
-    </footer>
+  </footer>
 
 </body>
 
