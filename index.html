@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,19 +8,28 @@
   <title>Mayuri Beauty Parlour</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- AOS Library CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+  <nav>
+  <div class="nav-container">
+    <div class="logo">Mayuri Beauty Parlour</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
+
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -55,13 +65,15 @@
 
   <!-- Gallery Section -->
   <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <img src="gallery1.jpg" alt="Gallery Image 1">
-      <img src="gallery2.jpg" alt="Gallery Image 2">
-      <img src="gallery3.jpg" alt="Gallery Image 3">
-    </div>
-  </section>
+  <h2>Gallery</h2>
+  <p>Some highlights from our beauty transformations.</p>
+  <div class="gallery-container">
+    <img src="gallery1.jpg" alt="Gallery1" data-aos="zoom-in" />
+    <img src="gallery2.jpg" alt="Gallery2" data-aos="fade-up" />
+    <img src="gallery3.jpg" alt="Gallery3" data-aos="zoom-in" />
+  </div>
+</section>
+
 
   <!-- About Us Section -->
   <section id="about">
@@ -90,24 +102,17 @@
   </a>
 
   <!-- Review Section -->
-  <section class="review-section" id="reviews">
-    <h2>What Our Customers Say</h2>
-    <div class="review-box">
-      <div class="star-rating">★★★★★</div>
-      <p>"I felt like a queen on my wedding day! The team at Mayuri Beauty Parlour is magical — my bridal look was flawless."</p>
-      <p><strong>- Pooja S.</strong></p>
-    </div>
-    <div class="review-box">
-      <div class="star-rating">★★★★☆</div>
-      <p>"Wonderful ambiance and very professional staff. Loved the facial and hair treatment!"</p>
-      <p><strong>- Anjali R.</strong></p>
-    </div>
-    <div class="review-box">
-      <div class="star-rating">★★★★★</div>
-      <p>"My go-to place for party makeup. Always on point and super friendly service!"</p>
-      <p><strong>- Sneha K.</strong></p>
-    </div>
-  </section>
+<section id="google-reviews" style="padding: 60px 20px; text-align: center;">
+  <h2 style="font-family: 'Dancing Script', cursive; color: #d63384; font-size: 2.5rem; margin-bottom: 30px;">
+    What Our Customers Say
+  </h2>
+  <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-95036a8d-6060-40b0-be41-23d990dabea9" data-elfsight-app-lazy></div>
+</section>
+
+
+  
 
   <!-- Contact Location Section -->
   <section id="contact-location" style="padding: 60px 20px; background: #ffeaea;">
@@ -134,6 +139,29 @@
     </p>
     <p>Contact us at <a href="mailto:info@mayuribeautyparlour.com">info@mayuribeautyparlour.com</a></p>
   </footer>
+
+<!-- Remove the duplicate script block -->
+
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+<!-- AOS Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    offset: 100,    // trigger point
+  });
+</script>
+
 
 </body>
 
