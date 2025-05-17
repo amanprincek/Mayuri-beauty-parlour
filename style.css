@@ -494,3 +494,27 @@ nav {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+.signature-section {
+  background: linear-gradient(to right, #ffe5ec, #ffc0cb);
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.signature-quote {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #b03060;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease;
+}
+
+.signature-name {
+  font-size: 1.2rem;
+  color: #8c2f52;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
